@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess a Number</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Guess a Number</h1>
+
+      <form>
+        <label for="guessField" id="guess"
+          >Guess a number between 1 and 100</label
+        >
+        <input
+          type="text"
+          id="guessField"
+          placeholder="Enter a number"
+          autocomplete="off"
+        />
+        <input type="submit" id="submit" value="Submit Guess" />
+      </form>
+
+      <div class="resultParas">
+        <div class="guessess">Previous Guesses:</div>
+        <div class="lastResult">Guesses Remaining: 10</div>
+        <div class="lowOrHi">Hint:</div>
+      </div>
+
+      <button class="new-game-btn" id="newGameBtn">Play New Game</button>
+    </div>
+
+    <!-- Custom Alert Modal -->
+    <div class="modal" id="alertModal">
+      <div class="modal-content">
+        <h2 id="alertTitle">Alert</h2>
+        <p id="alertMessage"></p>
+        <div class="modal-buttons">
+          <button class="modal-btn primary" id="alertOk">OK</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
